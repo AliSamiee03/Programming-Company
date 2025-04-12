@@ -56,4 +56,4 @@ class ProgrammerInfo(models.Model):
 
     user = models.ForeignKey('User', on_delete=models.CASCADE, related_name='informations')
     level = models.CharField(max_length=20, choices=LEVELS, default='JR')
-    manager = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True)
+    manager = models.ForeignKey('User', on_delete=models.SET_NULL, null=True, blank=True)
