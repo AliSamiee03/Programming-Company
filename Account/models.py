@@ -45,3 +45,15 @@ class User(AbstractBaseUser, PermissionsMixin):
     def __str__(self):
         return f"{self.first_name} {self.last_name}"
 
+
+
+class ProgrammerInfo(models.Model):
+    LEVELS = (
+        ('JR', _('Junior')),
+        ('MD', _('Mid-Level')),
+        ('SR', _('Senior')),
+    )
+
+    user = models.ForeignKey('User', on_delete=models.CASCADE, related_name='informations')
+    level = models.CharField(max_length=20, choices=LEVELS, default='JR')
+    manager = models.ForeignKey('self', on_delete=models.SET_NULL, null=True, blank=True)
