@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6358940-a7e5-4280-aa4e-17a7d9a1bc97" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Company/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Company/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Company/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgrammingSite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProgrammingSite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProgrammingSite/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProgrammingSite/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Project/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     #External Apps:
     'Account',
     'Company',
+    'Project',
     'rest_framework',
 ]
 
@@ -125,3 +126,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'Account.User'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
