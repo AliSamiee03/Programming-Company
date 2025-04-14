@@ -15,9 +15,9 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             last_name=validated_data['last_name'],
             email=validated_data['email'],
             phone=validated_data.get('phone'),
-            username=validated_data['email'],  # یا هر فیلد دیگری برای username
+            username=validated_data['email'],
         )
-        user.set_password(validated_data['password'])  # هش کردن گذرواژه
+        user.set_password(validated_data['password'])
         user.save()
         return user
 
@@ -33,3 +33,9 @@ class UserLoginSerializer(serializers.Serializer):
             raise serializers.ValidationError("email or password is wrong!")
         data['user'] = user
         return data
+
+class UserProfileSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        fields = ['first_name', 'last_name', 'email', 'phone', 'date_joined', 'last_visit']
+        read_only_fields = ['email', 'date_joined', 'last_visit']
